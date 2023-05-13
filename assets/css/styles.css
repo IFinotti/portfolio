@@ -123,6 +123,7 @@ p {
     right: 0;
     padding-left: 12rem;
     border-bottom: .2rem solid var(--secondary-color);
+    z-index: 1;
 }
 
 
