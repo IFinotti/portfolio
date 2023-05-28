@@ -1,0 +1,268 @@
+:root {
+    --primary-color: #353535;
+    --white-color: #ffffff;
+    --secondary-color: #B486AB;
+    --gap: 3rem;
+    --blue: #212A3E;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    /*color*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+
+}
+
+h6 { 
+    font-size: 3.5rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+/* CLASSES */
+
+.main-bg {
+    background-color: #222121;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%231e1d1d' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%231a191a' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23171616' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23131213' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%230F0E0F' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    color: var(--white-color);
+}
+
+
+.white-bg { 
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.linkedin-img,
+.ig-img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 2rem;
+}
+
+.git-img {
+    width: 6rem;
+    height: 6rem;
+    padding: 0rem;
+    margin-left: 1.2rem;
+} 
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+}
+
+::-webkit-scrollbar {
+    width: .5rem; 
+}
+  
+::-webkit-scrollbar-track {
+    background: #ffffff; 
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+}
+
+/* MENU */
+
+
+.menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 12rem;
+    border-bottom: .1rem solid var(--secondary-color);
+    z-index: 1;
+}
+
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.menu h1 a{
+    color: inherit;
+}
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 2.3rem;
+    position: relative;
+    color: var(--primary-color);
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1.7rem;
+    left: 50%;
+    width: 0;
+    height: 0.1rem;
+    background: var(--secondary-color);
+    transition: all 400ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+.menu ul li a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* PARTE DO CONTEÚDO */
+
+.page-content{
+    display: grid;
+    margin-left: 5rem;
+    width: 100%;
+}
+
+.page-content h1 {
+    font-size: 12rem;
+    margin: 5rem 0 0 0;
+    padding: 0;
+    transition: all 700ms ease-out;
+}
+
+.page-content h1:hover {
+    transform: rotate(-5deg);
+    color: var(--secondary-color);
+    cursor: default;
+}
+
+.img {
+    border-radius: 50%;
+    padding: 1rem;
+    margin-top: 3rem;
+    transition: all 1000ms ease-in-out;
+}
+
+.img:hover {
+    transform: rotate(50deg);
+    border: .2rem solid var(--secondary-color);
+}
+
+/* PARTE EMBAIXO */
+
+.page-content h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+}
+
+.page-content p {
+    width: 50rem;
+    grid-row: 2;
+    position: absolute;
+    line-height: 3rem;
+}
+
+
+/* RODAPÉ */
+
+.footer {
+    border-top: .1rem solid var(--blue);
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer ul li {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.footer ul li a {
+    color: inherit;
+}
+
+.footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
