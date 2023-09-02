@@ -57,7 +57,7 @@ a {
 
 .main-title {
   position: absolute;
-  /* display: block; */
+  display: flex;
   font-size: 2.3rem;
   margin: 0.2rem 0 0 17rem;
   font-family: "Martian Mono", monospace;
@@ -86,7 +86,11 @@ a {
   }
 
   .main-title {
+    position: relative;
     margin-top: 4rem;
+    margin-right: 18rem;
+    display: flex;
+    justify-content: center;
   }
 
   .close-menu-label::after {
