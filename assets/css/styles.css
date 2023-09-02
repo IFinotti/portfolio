@@ -57,9 +57,60 @@ a {
 
 .main-title {
   position: absolute;
+  /* display: block; */
   font-size: 2.3rem;
   margin: 0.2rem 0 0 17rem;
   font-family: "Martian Mono", monospace;
 }
+.close-menu {
+  display: none;
+}
 
-/* main section */
+/* media querie */
+
+@media screen and (max-width: 60rem) {
+  .menu {
+    text-align: center;
+    bottom: 0;
+    display: none;
+  }
+
+  .menu ul {
+    display: block;
+    margin-top: 18rem;
+  }
+
+  .menu ul li {
+    margin-top: 5rem;
+    font-size: 2.5rem;
+  }
+
+  .main-title {
+    margin-top: 4rem;
+  }
+
+  .close-menu-label::after {
+    content: "≡";
+    position: fixed;
+    z-index: 2;
+    top: 1rem;
+    right: 1rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-size: 3rem;
+    line-height: 3rem;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .close-menu:checked ~ .menu {
+    display: block;
+  }
+
+  .close-menu:checked ~ .close-menu-label::after {
+    content: "×";
+  }
+}

@@ -19,20 +19,37 @@
     />
   </head>
   <body>
-    <div class="menu">
-      <nav>
-        <h3 class="main-title">Finotti</h3>
+    <input id="close-menu" class="close-menu" type="checkbox" />
+    <label class="close-menu-label" for="close-menu" title="Close menu"></label>
+    <nav>
+      <div class="menu">
+        <h3 class="main-title">
+          <a href="#">Finotti</a>
+        </h3>
         <ul>
           <li><a href="#me">About me</a></li>
           <li><a href="#">Coding</a></li>
           <li><a href="#">Art</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
 
     <section
       class="section main-content"
       style="background-color: aqua"
     ></section>
+
+    <script>
+      const closeMenuButton = document.getElementById("close-menu");
+      const menu = document.querySelector(".menu");
+
+      closeMenuButton.addEventListener("change", function () {
+        if (this.checked) {
+          menu.style.display = "block";
+        } else {
+          menu.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
