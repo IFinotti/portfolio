@@ -126,6 +126,11 @@ bold {
 
 .text-shadow {
   text-shadow: -5px 3px 16px rgba(13, 5, 58, 0.44);
+  transition: all 600ms ease-in-out;
+}
+
+bold.text-shadow:hover {
+  color: #ffffff;
 }
 
 .text-content {
