@@ -1,0 +1,72 @@
+@media screen and (max-width: 60rem) {
+  .menu {
+    text-align: center;
+    bottom: 0;
+    display: none;
+  }
+
+  .menu ul {
+    display: block;
+    margin-top: 15rem;
+  }
+
+  .menu ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+
+  .main-title {
+    position: relative;
+    margin-top: 6rem;
+    margin-right: 18rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    margin-top: 15%;
+  }
+
+  .me {
+    display: flex;
+    position: relative;
+    margin: 5rem auto;
+    width: 70%;
+    height: 70%;
+    border-radius: 50px;
+  }
+
+  .close-menu-label::after {
+    content: "≡";
+    position: fixed;
+    z-index: 2;
+    top: 1rem;
+    right: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 2.5rem;
+    line-height: 3rem;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 17px;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .close-menu:checked ~ .menu {
+    display: block;
+  }
+
+  .close-menu:checked ~ .close-menu-label::after {
+    content: "×";
+  }
+}
