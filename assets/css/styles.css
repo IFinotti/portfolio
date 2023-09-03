@@ -108,7 +108,7 @@ bold {
 .text-content {
   margin-left: 5rem;
   font-size: 2.3rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.6rem;
 }
 
 .me {
@@ -169,6 +169,7 @@ bold.text-shadow:hover {
 
   .title {
     margin-top: 15%;
+    font-size: 600%;
   }
 
   .me {
@@ -188,8 +189,8 @@ bold.text-shadow:hover {
     content: "≡";
     position: fixed;
     z-index: 2;
-    top: 1rem;
-    right: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
     color: var(--secondary-color);
     background-color: var(--primary-color);
     font-size: 2.5rem;
