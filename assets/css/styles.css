@@ -149,8 +149,8 @@ bold {
 
   .me {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    margin: 5rem auto;
     width: 70%;
     height: 70%;
     border-radius: 50px;
