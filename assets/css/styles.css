@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #282828;
+  --primary-color: #000057;
   --secondary-color: #f5f5f5;
   --gray-color: #ada6a6;
   --scale: 1.1;
@@ -28,11 +28,12 @@ a {
   color: inherit;
 }
 
-.white-section {
+.white-section.section {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
-.black-section {
+
+.black-section.section {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
@@ -51,6 +52,7 @@ a {
   padding: 1.3rem;
   border-bottom: 0.2px solid var(--secondary-color);
   z-index: 1;
+  display: block;
 }
 
 .menu ul {
@@ -83,8 +85,32 @@ a {
   margin: 0.2rem 0 0 17rem;
   font-family: "Martian Mono", monospace;
 }
+
 .close-menu {
   display: none;
+}
+
+.title {
+  /* position: absolute; */
+  margin: 17rem 0 0 5rem;
+  font-size: 750%;
+}
+
+bold {
+  color: #0c0c2f;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.me {
+  display: block;
+  margin: 15rem 0 0 12rem;
+  width: 60%;
+  height: 60%;
+  border-radius: 50px;
 }
 
 /* media querie */
@@ -115,6 +141,19 @@ a {
     margin-right: 18rem;
     display: flex;
     justify-content: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    border-radius: 50px;
   }
 
   .close-menu-label::after {
