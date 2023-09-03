@@ -3,6 +3,7 @@
   --secondary-color: #979797;
   --gray-color: #ada6a6;
   --scale: 1.1;
+  --gap: 1;
 }
 
 * {
@@ -17,7 +18,6 @@ html {
 
 body {
   font-family: "Prompt", sans-serif;
-  background-color: var(--secondary-color);
 }
 
 .section {
@@ -29,7 +29,7 @@ a {
   color: inherit;
 }
 
-.white-section.section {
+.gray-section.section {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
@@ -54,8 +54,9 @@ a {
   border-bottom: 0.2px solid var(--secondary-color);
   z-index: 1;
   display: block;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .menu ul {
@@ -116,10 +117,20 @@ bold {
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 500ms ease-in-out;
+}
+
+.me:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .text-shadow {
   text-shadow: -5px 3px 16px rgba(13, 5, 58, 0.44);
+}
+
+.text-content {
+  margin-left: 5rem;
+  font-size: 2.3rem;
 }
 
 /* media querie */
