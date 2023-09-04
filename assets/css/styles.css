@@ -116,7 +116,7 @@ bold {
 .text-content {
   margin-left: 5rem;
   font-size: 2.3rem;
-  padding-bottom: 1.6rem;
+  padding-bottom: 5rem;
 }
 
 .me {
@@ -177,7 +177,7 @@ bold.text-shadow:hover {
 
   .title {
     margin-top: 15%;
-    font-size: 600%;
+    font-size: 500%;
   }
 
   .me {
