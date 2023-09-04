@@ -191,8 +191,9 @@ bold.text-shadow:hover {
 
   .sections-title {
     display: flex;
+    align-items: center;
     justify-content: center;
-    font-size: 450%;
+    font-size: 500%;
   }
 
   input.close-menu {
