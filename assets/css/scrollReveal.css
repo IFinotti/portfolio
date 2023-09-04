@@ -1,4 +1,7 @@
 .gray-section,
-.black-section {
+.black-section,
+.section,
+.grid,
+.text-content {
   visibility: hidden;
 }
