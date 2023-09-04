@@ -29,12 +29,12 @@ a {
   min-height: 100vh;
 }
 
-.gray-section.section {
+.gray-section {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
-.black-section.section {
+.black-section {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
@@ -48,6 +48,13 @@ a {
 bold {
   color: black;
 }
+
+.sections-title {
+  transition: all 600ms ease-in-out;
+  padding-top: 10rem;
+  font-size: 500%;
+}
+/* menu styles */
 
 .menu {
   top: 0;
@@ -94,8 +101,9 @@ bold {
   font-family: "Martian Mono", monospace;
 }
 
+/* first section styles */
+
 .title {
-  /* position: absolute; */
   margin: 17rem 0 0 5rem;
   font-size: 750%;
 }
@@ -179,6 +187,12 @@ bold.text-shadow:hover {
     width: 70%;
     height: 70%;
     border-radius: 50px;
+  }
+
+  .sections-title {
+    display: flex;
+    justify-content: center;
+    font-size: 450%;
   }
 
   input.close-menu {
