@@ -200,8 +200,8 @@ bold.text-shadow:hover {
   }
 
   .text-content {
-    margin: 0 4rem;
-    text-align: justify;
+    margin: 0 3rem;
+    text-align: center;
   }
 
   input.close-menu {
