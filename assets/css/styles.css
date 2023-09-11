@@ -260,6 +260,7 @@ footer p {
     margin: 0 3rem;
     text-align: center;
     font-size: 2rem;
+    padding-bottom: 5rem;
   }
 
   input.close-menu {
