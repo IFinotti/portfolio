@@ -195,6 +195,11 @@ footer p {
 .footer ul li {
   margin: 0 3rem;
   font-size: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.footer ul li:hover {
+  transform: translateY(-5px); /* Move o ícone 5 pixels para cima no hover */
 }
 
 @media screen and (max-width: 60rem) {
@@ -286,11 +291,6 @@ footer p {
 
   .close-menu:checked ~ .close-menu-label::after {
     content: "×";
-  }
-
-  footer {
-    padding: 2rem 0;
-    text-align: start;
   }
 
   .footer {
