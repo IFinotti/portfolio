@@ -177,6 +177,7 @@ footer {
 
 footer h2 {
   font-size: 2.4rem;
+  position: absolute;
 }
 
 footer p {
@@ -301,19 +302,12 @@ footer p {
   }
 
   footer p {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-  }
-
-  .footer ul {
-    display: flex;
-    list-style: none;
-    justify-content: end;
-    margin: 0 5rem;
+    font-size: 1.2rem;
   }
 
   .footer ul li {
     margin: 0 3rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
   }
 }
