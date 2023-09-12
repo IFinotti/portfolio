@@ -242,9 +242,9 @@ footer p {
   .me {
     display: flex;
     position: relative;
-    margin: 5rem auto;
-    width: 85%;
-    height: 80%;
+    margin: 7rem auto;
+    width: 75%;
+    height: 70%;
   }
 
   .sections-title {
@@ -256,7 +256,7 @@ footer p {
   }
 
   .text-content {
-    margin: 0 3rem;
+    margin: 4rem 3rem;
     text-align: center;
     font-size: 2rem;
     padding-bottom: 7rem;
