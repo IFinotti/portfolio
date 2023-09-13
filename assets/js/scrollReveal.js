@@ -5,6 +5,6 @@ const scrollReveal = ScrollReveal({
   reset: true,
 });
 
-scrollReveal.reveal(`.grid, .text-content`, {
+scrollReveal.reveal(`.grid, .text-content, .sections-title`, {
   interval: 100,
 });

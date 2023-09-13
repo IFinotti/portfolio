@@ -1,4 +1,5 @@
 .grid,
-.text-content {
+.text-content,
+.sections-title {
   visibility: hidden;
 }
