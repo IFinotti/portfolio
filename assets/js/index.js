@@ -11,6 +11,12 @@ closeMenuButton.addEventListener("change", function () {
 });
 
 menuLink.addEventListener("click", function () {
-  menu.style.display = "none";
-  closeMenuButton.checked = false;
+  if (
+    //this condition is just applied if the width of the window is less than 600px
+    window.innerWidth < // Return the width of the navigator window
+    60 * parseFloat(getComputedStyle(document.documentElement).fontSize) // make the conversion by rem to px
+  ) {
+    menu.style.display = "none";
+    closeMenuButton.checked = false;
+  }
 });
