@@ -20,6 +20,20 @@ body {
   font-family: "Prompt", sans-serif;
 }
 
+*::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fafafa;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 1.3rem;
+  border: 0.3rem solid #ffffff;
+}
+
 a {
   text-decoration: none;
   color: inherit;
