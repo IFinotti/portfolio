@@ -157,13 +157,13 @@ bold {
   width: 75%;
   height: 70%;
   border-radius: 50px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  transition: all 500ms ease-in-out;
+  -webkit-mask-image: linear-gradient(#000, rgba(0, 0, 0, 0.5));
+  mask-image: linear-gradient(#000, rgba(0, 0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
 }
 
 .me:hover {
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transform: translateY(-3rem);
 }
 
 .text-shadow {
@@ -213,7 +213,7 @@ footer p {
 }
 
 .footer ul li:hover {
-  transform: translateY(-5px); /* Move o ícone 5 pixels para cima no hover */
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 60rem) {
