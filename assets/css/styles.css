@@ -137,6 +137,7 @@ bold {
 .title {
   margin: 17rem 0 0 5rem;
   font-size: 750%;
+  padding-bottom: 5rem;
 }
 
 .grid {
