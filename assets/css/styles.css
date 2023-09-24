@@ -34,6 +34,36 @@ body {
   border: 0.3rem solid #ffffff;
 }
 
+.yt {
+  transition: all 400ms ease-in-out;
+}
+
+.yt:hover {
+  background-color: #ff0000;
+  padding: 0.2rem 1.5rem;
+  border-radius: 20%;
+  color: white;
+}
+
+.github {
+  transition: all 300ms ease-in-out;
+}
+
+.github:hover {
+  color: white;
+}
+
+.linkedin {
+  transition: all 300ms ease-in-out;
+}
+
+.linkedin:hover {
+  background-color: #0072b1;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 20%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -215,21 +245,6 @@ footer p {
 
 .footer ul li:hover {
   transform: translateY(-5px);
-}
-
-.github:hover {
-  color: white;
-}
-
-.linkedin {
-  transition: all 300ms ease-in-out;
-}
-
-.linkedin:hover {
-  background-color: #0072b1;
-  color: white;
-  padding: 0.5rem;
-  border-radius: 20%;
 }
 
 .back-to-top {
