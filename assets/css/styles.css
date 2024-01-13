@@ -57,6 +57,7 @@ a {
   max-width: 120rem;
   margin: 0 auto;
   padding: 10rem var(--gap);
+  overflow: hidden;
 }
 
 bold {
@@ -231,6 +232,26 @@ footer p {
   display: flex;
   font-size: 2.5rem;
   border: 0.1rem solid var(--primary-color);
+}
+
+/* art photos */
+
+.grid-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 100rem;
+  margin: 5rem auto;
+}
+
+.grid-projects-item {
+  overflow: hidden;
+}
+
+.grid-projects-item img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media screen and (max-width: 60rem) {
