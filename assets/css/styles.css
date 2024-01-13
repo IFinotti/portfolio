@@ -263,6 +263,11 @@ footer p {
   margin-bottom: 3rem;
 }
 
+.title-project {
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+}
+
 @media screen and (max-width: 60rem) {
   .menu {
     text-align: center;
