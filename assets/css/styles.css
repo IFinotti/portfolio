@@ -68,7 +68,7 @@ bold {
   padding-top: 10rem;
   font-size: 500%;
   margin-left: 4.5rem;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 /* menu styles */
 
@@ -147,7 +147,7 @@ bold {
 }
 
 .text-content {
-  margin-left: 5rem;
+  margin-left: 4.5rem;
   font-size: 2.3rem;
   padding-bottom: 5rem;
   justify-content: center;
@@ -240,18 +240,27 @@ footer p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  max-width: 100rem;
-  margin: 5rem auto;
+  max-width: 120rem;
+  margin: 1rem;
+  margin-bottom: 13rem;
 }
 
 .grid-projects-item {
   overflow: hidden;
+  margin: 3rem;
 }
 
 .grid-projects-item img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.text-description {
+  margin-top: 2rem;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 60rem) {
