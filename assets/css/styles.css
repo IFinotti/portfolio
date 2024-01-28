@@ -301,7 +301,6 @@ footer p {
 
   footer h2 {
     font-size: 2.2rem;
-    /* position: absolute; */
   }
 
   footer p {
@@ -319,16 +318,10 @@ footer p {
     margin-bottom: 2rem;
   }
 
-  .main-title {
-    font-size: 2.3rem;
-    margin: 0.2rem 0 0 8rem;
-  }
-
   .menu ul {
     margin: 0 2rem;
   }
 }
-
 
 @media screen and (max-width: 60rem) {
   .menu {
@@ -440,5 +433,25 @@ footer p {
     margin: 0 2rem;
     font-size: 2.2rem;
     margin-bottom: 3rem;
+  }
+
+  .grid-projects {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-projects-item {
+    overflow: hidden;
+    margin: 3rem;
+  }
+
+  .text-description {
+    margin-top: 2rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .title-project {
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
   }
 }
